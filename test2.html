@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" contenu="width=device-width, initial-scale=1.0">
+	<title>CV - Agent Administratif</title>
+
+	<style>
+		/* RESET */
+		* {
+		 box-sizing: border-box;
+		 margin: 0;
+		 padding: 0;
+		}
+
+		/* BASE */
+		body {
+		 font-family: Arial, Helvetica, sans-serif;
+		 background: #ffffff;
+		 padding: 15px;
+		}
+
+		/* CONTAINER */
+		.cv {
+		 max-width: 1000px;
+		 margin: auto;
+		 border: 2px solid #9ec3e6;
+		 display: flex;
+		 flex-wrap: wrap;
+		}
+
+		/* COLONNE GAUCHE */
+		.left {
+		 width: 30%;
+		 min-width: 260px;
+		 border-right: 2px solid #9ec3e6;
+		 padding: 15px;
+		}
+
+		.name {
+		 font-size: 26px;
+		 font-weight: bold;
+		 margin-bottom: 15px;
+		}
+
+		/* TITRES */
+		.section-titre,
+		.right-section-titre {
+		 background: #9ec3e6;
+		 font-weight: bold;
+		 padding: 6px;
+		 margin: 15px 0 10px;
+		 font-size: 14px;
+		}
+
+		/* LISTES */
+		.left ul {
+		 padding-left: 18px;
+		}
+
+		.left li {
+		 font-size: 14px;
+		 margin-bottom: 6px;
+		}
+
+		/* CONTACT */
+		.contact p {
+		 font-size: 14px;
+		 margin: 4px 0;
+		}
+
+		/* COLONNE DROITE */
+		.right {
+		 width: 70%;
+		 padding: 15px;
+		}
+
+		.title {
+		 text-align: center;
+		 font-size: 22px;
+		 font-weight: bold;
+		 margin-bottom: 15px;
+		}
+
+		/* EXPERIENCE / FORMATION */
+		.row {
+		 display: flex;
+		 gap: 10px;
+		 margin-bottom: 12px;
+		}
+
+		.annee {
+		 min-width: 90px;
+		 font-weight: bold;
+		}
+
+		.contenu {
+		 font-size: 14px;
+		}
+
+		.contenu strong {
+		 display: block;
+		}
+
+		/* RESPONSIVE */
+		@media screen and (max-width: 768px) {
+
+		 .cv {
+		 flex-direction: column;
+		 }
+
+		 .left,
+		 .right {
+		 width: 100%;
+		 border-right: none;
+		 }
+
+		 .title {
+		 font-size: 20px;
+		 }
+
+		 .row {
+		 flex-direction: column;
+		 }
+
+		 .annee {
+		 font-weight: bold;
+		 margin-bottom: 2px;
+		 }
+		}
+
+		/* PRINT */
+		@media print {
+		 body {
+		 padding: 0;
+		 }
+
+		 .cv {
+		 border: none;
+		 }
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="cv">
+
+		<!-- GAUCHE -->
+		<div class="left">
+			<div class="name">Guillaume PELCZAR</div>
+
+			<div class="section-titre">ETAT CIVIL</div>
+			<ul>
+				<li>29 ans</li>
+				<li>Permis B (Véhiculé)</li>
+			</ul>
+
+			<div class="section-titre">COORDONNEES</div>
+			<div class="contact">
+				<p>Adresse : Quartier Saint Hermentaire <br>Résidence Les Floralies 2 <br>83300 DRAGUIGNAN</p><br>
+				<p>Tél :</p>
+				<p>Port :06.66.90.96.37</p> 
+			</div>
+
+			<div class="section-titre">LANGUES</div>
+			<ul>
+				<li>Anglais : écrit et parlé</li>
+				<li>Espagnol : écrit et parlé</li>
+			</ul>
+
+			<div class="section-titre">COMPETENCES</div>
+			<ul>
+				<li>Accueil d’un public</li>
+				<li>Conception / réalisation de ressources pédagogiques</li>
+				<li>Préparation / animation d’actions de médiation</li>
+				<li>Maîtrise suite Office</li>
+			</ul>
+
+			<div class="section-titre">QUALITES</div>
+			<ul>
+				<li>Polyvalent</li>
+				<li>Organisé</li>
+				<li>Curieux</li>
+			</ul>
+
+			<div class="section-titre">CENTRES D’INTERETS</div>
+			<ul>
+				<li>Informatique</li>
+				<li>Musique</li>
+				<li>Marche</li>
+				<li>Voyages</li>
+			</ul>
+		</div>
+
+		<!-- DROITE -->
+		<div class="right">
+			<div class="title">AGENT ADMINISTRATIF</div>
+
+			<div class="right-section-titre">EXPERIENCES PROFESSIONNELLES</div>
+			
+			<div class="row">
+				<div class="annee">2023 -</div>
+				<div class="contenu">
+					<strong>Agent Administratif</strong>
+					Fonctionnaire Territorial<br>
+					Syndicat Mixte de l'Argens<br>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="annee">2023</div>
+				<div class="contenu">
+					<strong>Agent Administratif</strong>
+					Cabinet de tutelle Vercingétorix JONOT<br>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="annee">2022</div>
+				<div class="contenu">
+					<strong>Agent Administratif</strong>
+					Bureau de l’Ingénierie Territoriale<br>
+					Sous-Préfecture de Draguignan
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="annee">2022</div>
+				<div class="contenu">
+					<strong>Agent Logistique</strong>
+					MDCV au Cannet-des-Maures
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="annee">2021 - 2022</div>
+				<div class="contenu">
+					<strong>Médiateur Numérique</strong>
+					Association M.O.D.E 83 à Draguignan
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="annee">2019 - 2020</div>
+				<div class="contenu">
+					<strong>Service Civique</strong>
+					Lutte contre la fracture numérique.<br>
+					Médiathèque Chabran de Draguignan.
+				</div>
+			</div>
+
+			<div class="right-section-titre">FORMATIONS</div>
+
+			<div class="row">
+				<div class="annee">2021</div>
+				<div class="contenu">
+					<strong>Formation Responsable d’Espace de Médiation Numérique</strong>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="annee">2017 - 2018</div>
+				<div class="contenu">
+					<strong>Niveau Licence Professionnelle</strong>
+					Développement d’Applications Mobiles.<br>
+					Université de Sophia Antipolis.
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="annee">2015 - 2017</div>
+				<div class="contenu">
+					<strong>BTS SNIR</strong>
+					Système Numérique, Informatique et Réseaux.<br>
+					Lycée Thomas Edison de Lorgues.
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="annee">2011 - 2015</div>
+				<div class="contenu">
+					<strong>Baccalauréat Technologique mention AB</strong>
+					Gestion et finance.<br>
+					Lycée Jean Moulin de Draguignan.
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
